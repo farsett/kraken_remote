@@ -6,7 +6,7 @@ API принимает и возвращает json-словарь с настр
 ### Установка
 Предполагается, что уже установлен [krakensdr_doa](https://github.com/krakenrf/krakensdr_doa)
 
-1. Перейдите в рабочую директорию и склонируйте репозиторий
+1. Перейдите в домашнюю директорию и склонируйте репозиторий
     ```
     git clone https://github.com/farsett/kraken_remote.git
     ```
@@ -21,10 +21,10 @@ API принимает и возвращает json-словарь с настр
    pip install fastapi uvicorn
    ```
 4. На основе файла `.envexample` создайте файл `.env`
-   - SETTINGS_FILE_PATH - путь к файлу настроек krakensdr_doa
-   - RC_API_PATH - путь к файлам в директории API
-   - RC_HOST - адрес хоста API (по умолчанию доступен на всех адресах)
-   - RC_PORT - порт (по умолчанию `8833`)
+   - **SETTINGS_FILE_PATH** - путь к файлу настроек krakensdr_doa
+   - **RC_API_PATH** - путь к файлам в директории API
+   - **RC_HOST** - адрес хоста API (по умолчанию доступен на всех адресах)
+   - **RC_PORT** - порт (по умолчанию `8833`)
 5. Сделайте `auto_start.sh` исполняемым и проверьте работоспособность
    ```
    sudo chmod +x auto_start.sh
@@ -34,7 +34,7 @@ API принимает и возвращает json-словарь с настр
    ```
    sudo crontab -e
    ```
-   добавив в конце
+   добавив в конце:
     ```
    @reboot /путь/к/auto_start.sh
    ```
