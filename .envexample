@@ -1,4 +1,4 @@
 SETTINGS_FILE_PATH="/home/pelengas/krakensdr/krakensdr_doa/_share/settings.json"
-RC_API_PATH="/home/pelengas/remote_settings"
-#RC_HOST="0.0.0.0"
+RC_API_PATH="/home/pelengas/kraken_remote"
+#RC_HOST=0.0.0.0
 #RC_PORT=8833
