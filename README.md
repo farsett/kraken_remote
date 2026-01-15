@@ -18,7 +18,7 @@ API принимает и возвращает json-словарь с настр
 3. Установите необходимые библиотеки
    ```
    source /remoteenv/bin/activate
-   pip install fastapi uvicorn
+   pip install fastapi uvicorn dotenv
    ```
 4. На основе файла `.envexample` создайте файл `.env`
    - **SETTINGS_FILE_PATH** - путь к файлу настроек krakensdr_doa
