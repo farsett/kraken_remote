@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 SETTINGS_PATH = os.getenv('SETTINGS_FILE_PATH', '/home/krakenrf/krakensdr_doa/_share/settings.json')
 HOST = os.getenv('RC_HOST', '0.0.0.0')
-PORT = os.getenv('RC_PORT', 8833)
+PORT = int(os.getenv('RC_PORT', 8833))
 
 app = FastAPI(
     title="Remote Control",
